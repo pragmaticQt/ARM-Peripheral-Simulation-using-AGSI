@@ -1,0 +1,6 @@
+; SCM3PeriDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SCM3PeriDLL"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,20 @@
+*** Creating Trace Output File '.\Obj\SCM3Peri.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\main.o"'
+### ADS-LD Command completed:
+".\obj\startup.o" ".\obj\main.o" --device DLM --strict --scatter ".\Obj\SCM3Peri.sct" 
+--entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\SCM3Peri.map" -o ".\Obj\SCM3Peri.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\SCM3Peri.axf'
+### ADS-LD Command File: '.\Obj\SCM3Peri.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\SCM3Peri.lnp', Handle=0x00000240
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\SCM3Peri.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

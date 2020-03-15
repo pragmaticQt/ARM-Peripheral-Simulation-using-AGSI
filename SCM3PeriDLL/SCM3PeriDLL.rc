@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADC DIALOGEX 0, 0, 264, 179
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "A/D Converter"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "A/D Control",IDC_STATIC,6,7,251,62
+    RTEXT           "ADCR:",IDC_STATIC,14,21,28,8
+    EDITTEXT        IDC_ADC_ADCR,44,19,54,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "CLKS:",IDC_STATIC,18,37,24,8
+    COMBOBOX        IDC_ADC_CLKS,44,35,54,96,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    RTEXT           "START:",IDC_STATIC,14,53,28,8
+    COMBOBOX        IDC_ADC_START,44,51,54,96,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    RTEXT           "SEL:",IDC_STATIC,110,21,28,8
+    EDITTEXT        IDC_ADC_SEL,140,19,24,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "CLKDIV:",IDC_STATIC,110,37,28,8
+    EDITTEXT        IDC_ADC_CLKDIV,140,35,24,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "A/D Clock:",IDC_STATIC,102,53,36,8
+    EDITTEXT        IDC_ADC_RATE,140,51,42,12,ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_TABSTOP
+    CONTROL         "PDN",IDC_ADC_PDN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,19,38,8
+    CONTROL         "BURST",IDC_ADC_BURST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,29,38,8
+    CONTROL         "EDGE",IDC_ADC_EDGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,39,38,8
+    GROUPBOX        "A/D Data",IDC_STATIC,6,71,251,44
+    RTEXT           "ADDR:",IDC_STATIC,14,83,28,8
+    EDITTEXT        IDC_ADC_ADDR,44,81,54,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "CHN:",IDC_STATIC,110,83,28,8
+    EDITTEXT        IDC_ADC_CHN,140,81,24,12,ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_TABSTOP
+    RTEXT           "V/V3A:",IDC_STATIC,102,99,36,8
+    EDITTEXT        IDC_ADC_VV3A,140,97,36,12,ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_TABSTOP
+    CONTROL         "DONE",IDC_ADC_DONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,81,38,8
+    CONTROL         "OVERUN",IDC_ADC_OVERUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,91,44,8
+    RTEXT           "V3A:",IDC_STATIC,18,99,24,8
+    EDITTEXT        IDC_ADC_V3A,44,97,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "Analog Inputs",IDC_STATIC,6,117,251,55
+    RTEXT           "AIN0:",IDC_STATIC,18,129,24,8
+    EDITTEXT        IDC_ADC_AIN0,44,127,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN1:",IDC_STATIC,72,129,24,8
+    EDITTEXT        IDC_ADC_AIN1,98,127,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN2:",IDC_STATIC,126,129,24,8
+    EDITTEXT        IDC_ADC_AIN2,152,127,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN3:",IDC_STATIC,180,129,24,8
+    EDITTEXT        IDC_ADC_AIN3,206,127,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN4:",IDC_STATIC,18,143,24,8
+    EDITTEXT        IDC_ADC_AIN4,44,141,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN5:",IDC_STATIC,72,143,24,8
+    EDITTEXT        IDC_ADC_AIN5,98,141,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN6:",IDC_STATIC,126,143,24,8
+    EDITTEXT        IDC_ADC_AIN6,152,141,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    RTEXT           "AIN7:",IDC_STATIC,180,143,24,8
+    EDITTEXT        IDC_ADC_AIN7,206,141,28,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "OK",IDOK,8,151,28,12,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,218,151,28,12,NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADC, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADC DLGINIT
+BEGIN
+    IDC_ADC_CLKS, 0x403, 12, 0
+0x3131, 0x6c63, 0x2f6b, 0x3031, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 11, 0
+0x3031, 0x6c63, 0x2f6b, 0x6239, 0x7469, "\000" 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6339, 0x6b6c, 0x382f, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6338, 0x6b6c, 0x372f, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6337, 0x6b6c, 0x362f, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6336, 0x6b6c, 0x352f, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6335, 0x6b6c, 0x342f, 0x6962, 0x0074, 
+    IDC_ADC_CLKS, 0x403, 10, 0
+0x6334, 0x6b6c, 0x332f, 0x6962, 0x0074, 
+    IDC_ADC_START, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_ADC_START, 0x403, 4, 0
+0x6f4e, 0x0077, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    IDC_ADC_START, 0x403, 6, 0
+0x7352, 0x7672, 0x0064, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)\r\n"
+    "LANGUAGE 9, 2\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SCM3PeriDLL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SCM3PeriDLL.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SCM3PeriDLL.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE 9, 2
+#pragma code_page(1252)
+#include "res\SCM3PeriDLL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
